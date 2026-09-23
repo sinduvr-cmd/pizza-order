@@ -39,7 +39,7 @@ else:
     base_price = 799
 
 
-if crust_type == "Stuffed:
+if crust_type == "Stuffed":
     crust_fee = 150
 
 
