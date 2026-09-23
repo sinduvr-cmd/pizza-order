@@ -1,7 +1,7 @@
 import streamlit as st
 
 # -- Page Header --
-st.header("Interactive pizza calcuator")
+st.header("Interactive Pizza Calcuator")
 st.markdown("Customize your order below")
 st.divider()
 
@@ -39,7 +39,7 @@ else:
     base_price = 799
 
 
-if crust_type == "Stuffed Crust (+₹150)":
+if crust_type == "Stuffed:
     crust_fee = 150
 
 
@@ -61,7 +61,10 @@ subtotal = base_price + crust_fee + topping_total_cost
 
 if coupon_code == "PIZZA50":
     discount = 50  # Flat ₹50 off
-
+elif coupon_code == "NEW":
+    discount = 70  # Flat ₹70 off
+elif coupon_code != "":
+    st.error("❌ Invalid Coupon Code entered. No reduction applied.")
 final_total = subtotal - discount 
 
 st.subheader("🛍️ Your Final Bill Summary")
