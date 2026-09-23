@@ -9,7 +9,7 @@ st.divider()
 st.subheader("Configure your pizza")
 
 #-- size selection --
-pizza_size = st.selecbox("Choose Pizz Size: ", ["Small", "Medium", "Large"])
+pizza_size = st.selectbox("Choose Pizz Size: ", ["Small", "Medium", "Large"])
 
 # -- crust selection --
 crust_type = st.selectbox("Choose Crust Type: ", ["Thin", "Thick", "Stuffed"])
